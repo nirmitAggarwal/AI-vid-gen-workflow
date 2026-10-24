@@ -1,0 +1,249 @@
+{
+  "sampleRate": 24000,
+  "voice": "am_michael",
+  "speed": 1.1,
+  "gap": 0.25,
+  "totalDuration": 98.308,
+  "lines": [
+    {
+      "id": "L1",
+      "text": "Meet Rohan. Second year engineering.",
+      "file": "L1.wav",
+      "duration": 2.665,
+      "hash": "cfc265a42f7d2c3f",
+      "start": 0.0
+    },
+    {
+      "id": "L2",
+      "text": "And according to the internet, already obsolete.",
+      "file": "L2.wav",
+      "duration": 2.987,
+      "hash": "e65e01b693a03ea2",
+      "start": 2.915
+    },
+    {
+      "id": "L3",
+      "text": "He's being trained for a world that no longer exists.",
+      "file": "L3.wav",
+      "duration": 3.307,
+      "hash": "ea0226be504efd8a",
+      "start": 6.152
+    },
+    {
+      "id": "L4",
+      "text": "In twenty twenty-six, his professor is still teaching Java applets.",
+      "file": "L4.wav",
+      "duration": 4.49,
+      "hash": "4fae465d6433086a",
+      "start": 9.709
+    },
+    {
+      "id": "L5",
+      "text": "Meanwhile, the AI he's not allowed to use just finished his assignment.",
+      "file": "L5.wav",
+      "duration": 4.544,
+      "hash": "b348a3192b18f4e5",
+      "start": 14.449
+    },
+    {
+      "id": "L6",
+      "text": "In four seconds.",
+      "file": "L6.wav",
+      "duration": 1.365,
+      "hash": "e6f6629ce13ee2e6",
+      "start": 19.243
+    },
+    {
+      "id": "L7",
+      "text": "So Rohan opens YouTube for one tutorial.",
+      "file": "L7.wav",
+      "duration": 3.008,
+      "hash": "f617ed50ddc78699",
+      "start": 20.858
+    },
+    {
+      "id": "L8",
+      "text": "Forty-seven tabs later, he's studying web development, machine learning, and quantum computing.",
+      "file": "L8.wav",
+      "duration": 6.077,
+      "hash": "4b594a41717fb63f",
+      "start": 24.116
+    },
+    {
+      "id": "L9",
+      "text": "It's still Tuesday.",
+      "file": "L9.wav",
+      "duration": 1.387,
+      "hash": "bf5908e80bb27e24",
+      "start": 30.443
+    },
+    {
+      "id": "L10",
+      "text": "And every video starts the same way. You're already behind.",
+      "file": "L10.wav",
+      "duration": 3.84,
+      "hash": "0be8e78d9707986e",
+      "start": 32.08
+    },
+    {
+      "id": "L11",
+      "text": "So he builds a roadmap. Then a roadmap for choosing roadmaps.",
+      "file": "L11.wav",
+      "duration": 4.047,
+      "hash": "454bbc0e8c326150",
+      "start": 36.17
+    },
+    {
+      "id": "L12",
+      "text": "Nine months later, he has learned a lot. About roadmaps.",
+      "file": "L12.wav",
+      "duration": 3.625,
+      "hash": "461fa4dbd141923b",
+      "start": 40.467
+    },
+    {
+      "id": "L13",
+      "text": "Four hundred applications. Two replies.",
+      "file": "L13.wav",
+      "duration": 2.837,
+      "hash": "78634cf027e39e85",
+      "start": 44.342
+    },
+    {
+      "id": "L14",
+      "text": "One rejection. And one rejection with better grammar.",
+      "file": "L14.wav",
+      "duration": 3.563,
+      "hash": "9e5645463c91ca22",
+      "start": 47.429
+    },
+    {
+      "id": "L15",
+      "text": "Entry level. Five years of experience required.",
+      "file": "L15.wav",
+      "duration": 3.584,
+      "hash": "54df9e01d02856d6",
+      "start": 51.242
+    },
+    {
+      "id": "L16",
+      "text": "For a job that didn't exist three years ago.",
+      "file": "L16.wav",
+      "duration": 2.923,
+      "hash": "2c4c973f67db3c8f",
+      "start": 55.076
+    },
+    {
+      "id": "L17",
+      "text": "Where do you see yourself in five years?",
+      "file": "L17.wav",
+      "duration": 2.475,
+      "hash": "79d65fc4e408beeb",
+      "start": 58.249
+    },
+    {
+      "id": "L18",
+      "text": "Employed, hopefully. Alive, ideally.",
+      "file": "L18.wav",
+      "duration": 2.859,
+      "hash": "349f56f1a1a014d3",
+      "start": 60.974
+    },
+    {
+      "id": "L19",
+      "text": "A seventeen-year-old just raised a million dollars.",
+      "file": "L19.wav",
+      "duration": 3.261,
+      "hash": "2c4651c453888762",
+      "start": 64.083
+    },
+    {
+      "id": "L20",
+      "text": "His cousin did a bootcamp and now earns more than his father.",
+      "file": "L20.wav",
+      "duration": 3.797,
+      "hash": "750790e6788ecae5",
+      "start": 67.594
+    },
+    {
+      "id": "L21",
+      "text": "So at dinner, his parents ask. Very gently.",
+      "file": "L21.wav",
+      "duration": 3.089,
+      "hash": "9d007ddb5e434611",
+      "start": 71.641
+    },
+    {
+      "id": "L22",
+      "text": "So what exactly is it that you do?",
+      "file": "L22.wav",
+      "duration": 2.283,
+      "hash": "c34ef6b2e7cbca94",
+      "start": 74.98
+    },
+    {
+      "id": "L23",
+      "text": "The technology isn't the problem. The syllabus is.",
+      "file": "L23.wav",
+      "duration": 3.413,
+      "hash": "f137164f92eda950",
+      "start": 77.513
+    },
+    {
+      "id": "L24",
+      "text": "So Rohan stops waiting for permission.",
+      "file": "L24.wav",
+      "duration": 2.432,
+      "hash": "f91832399a2a0082",
+      "start": 81.176
+    },
+    {
+      "id": "L25",
+      "text": "He builds one small thing. Then one more.",
+      "file": "L25.wav",
+      "duration": 2.816,
+      "hash": "bb24fa874cdc9207",
+      "start": 83.858
+    },
+    {
+      "id": "L26",
+      "text": "Not for marks. Not for the resume.",
+      "file": "L26.wav",
+      "duration": 2.639,
+      "hash": "30d111df3ce0e465",
+      "start": 86.924
+    },
+    {
+      "id": "L27",
+      "text": "Because the future isn't going to be handed to him.",
+      "file": "L27.wav",
+      "duration": 3.051,
+      "hash": "2f6f9e06e7f7a5c3",
+      "start": 89.813
+    },
+    {
+      "id": "L28",
+      "text": "It has to be built.",
+      "file": "L28.wav",
+      "duration": 1.461,
+      "hash": "4aa500e7c2b9127e",
+      "start": 93.114
+    },
+    {
+      "id": "L29",
+      "text": "The syllabus is outdated.",
+      "file": "L29.wav",
+      "duration": 1.963,
+      "hash": "32becdae9c17f3c7",
+      "start": 94.825
+    },
+    {
+      "id": "L30",
+      "text": "He isn't.",
+      "file": "L30.wav",
+      "duration": 1.02,
+      "hash": "0e2e6aa2a76a8d1c",
+      "start": 97.038
+    }
+  ]
+}

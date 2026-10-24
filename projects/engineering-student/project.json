@@ -1,0 +1,23 @@
+{
+  "name": "engineering-student",
+  "createdAt": "2026-10-24T11:31:09.443Z",
+  "phase": "build",
+  "frame": {
+    "preset": "youtube",
+    "width": 1920,
+    "height": 1080
+  },
+  "fps": 30,
+  "targetDurationSec": 98,
+  "style": "marker-doodle",
+  "voice": {
+    "name": "am_michael",
+    "speed": 1.1
+  },
+  "audioApproved": true,
+  "scriptApproved": true,
+  "storyboardApproved": true,
+  "designApproved": true,
+  "audioTotalSec": 98.308,
+  "totalFrames": 2957
+}
