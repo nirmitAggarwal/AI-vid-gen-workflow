@@ -1,0 +1,15 @@
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+dist/
+build/
+.cache/
+voice-lab/models/*.onnx
+voice-lab/models/*.bin
+voice-lab/*.wav
+projects/*/output/
