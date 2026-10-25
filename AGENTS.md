@@ -106,3 +106,4 @@ projects/<name>/
 - Skills (load when relevant): `skills/scriptwriting/`, `skills/voiceover/`,
   `skills/motion-design/`, `skills/rendering/`, `skills/research/`
 - Vendored Remotion skills: `templates/remotion-vertical/.agents/skills/`
+- premade asssets: `assets folder`

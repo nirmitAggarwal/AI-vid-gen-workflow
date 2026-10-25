@@ -1,51 +1,84 @@
 # Kinetic Typography
 
 Words ARE the visuals. Every audio line is performed by type — punched in,
-slammed, sliced, scaled. The viewer reads along without trying to. High
-contrast, high energy, zero quiet moments.
+slammed, sliced, scaled. Three registers share one system:
+
+| Mode | Feel | When |
+|---|---|---|
+| `minimal` | Quiet type composition, huge negative space, one accent word | Quotes, definitions, slow beats |
+| `editorial` | Bold stacked headlines, split panels, outlined ghost words | Explanations, lists, comparisons |
+| `energetic` | Slam-ins, scale punches, marquees, flash frames | Hooks, punchlines, calls to action |
 
 ## Palette
 
 | Token | Value | Use |
 |---|---|---|
-| background | `#0D0D0D` | Near-black stage |
-| surface | `#171717` / `#232323` | Occasional blocks behind words |
-| text | `#FFFFFF` | Default word color |
-| accent | `#FFE600` | Hi-vis yellow — the keyword color |
-| accentAlt | `#FF3B30` | Red — reserve for a SINGLE word per scene max |
+| background | `#111111` | Near-black stage |
+| surface / surfaceAlt | `#1A1A1A` / `#242424` | Blocks behind words, split panels |
+| text | `#FFFFFF` | Default word colour |
+| accent (cobalt) | `#2457FF` | Default keyword colour + accent blocks |
+| cyan | `#56D7FF` | Second accent — data points, underlines |
+| orange | `#FF7438` | Warning / contrast accent |
+| yellow | `#F8E34A` | Highlight-flash accent |
+| magenta | `#F45AA6` | Rare emphasis accent |
+| grey | `#A6A6A6` | Supporting text, ghost words |
 
 Rules:
-- One keyword per line gets the accent. Flip its background block too (yellow bg, black text).
-- Background can flash to accent for 4–8 frames on impact moments (beats, punchlines).
+- One or two accents per scene, never all of them. Cobalt is the default;
+  the others are seasoning.
+- Keyword flip: white word → accent colour, optionally on an accent block
+  with black text (`#111111`) for maximum punch.
+- Flash frames: background may flip to an accent for 4–8 frames on impact.
 
 ## Typography
 
-- Display: Impact/Arial Black, weight 900, HUGE — words should nearly touch the frame edges.
-- Line-height 0.95: stacked lines nearly collide. That's the look.
-- No thin weights anywhere. Captions are bold sans at 28–36px.
-- Text can be rotated ±2°, scaled non-uniformly, or clipped for emphasis — but keep it readable.
+- Display: **Barge Black** (900) — the workhorse. Stack it at 0.92 line-height
+  so lines nearly collide.
+- **Titan One** for round, poster-weight statements; **Milker** for condensed
+  expressive bursts; **Newake** for wide accent/caption lettering.
+- **Designer** is the quiet supporting sans — captions, kickers, footnotes.
+- Outlined ghost words: `-webkit-text-stroke` in white at 5px over transparent
+  fill (see `THEME.type.outlineStroke`).
+- Auto-fit: `fitSize()` clamps words between `type.hugeMin` and
+  `type.hugeMax` so a word nearly touches the frame edges without clipping.
 
 ## Motion
 
-- Words arrive on the beat: 8–12 frame entrances, spring with overshoot (`motion.spring`).
-- Stagger word-by-word at 2 frames — a sentence should cascade like a drum fill.
-- Exits are fast cuts or vertical slams (translateY off-frame), never fades.
-- Background number/word watermarks can scroll or pulse continuously.
-- Emphasis moves: scale punch (1.0 → 1.12 → 1.0 in 8 frames), color flip, block reveal.
+- Entrances are snappy with an out-ease (`THEME.motion.easing`), 9 frames, and
+  a punchy spring overshoot for word landings.
+- Word cascade at 2-frame stagger; characters at 1-frame (`charStagger`).
+- Scale punch on landing: 1 → 1.12 → 1 over `punchFrames`.
+- Letter-spacing settle (`trackingDuration`) — words breathe in from wide
+  tracking to tight.
+- Exits are cuts and slams, never fades. Holds keep a slow watermark drift
+  (`watermarkDrift`) or marquee so no frame is ever static.
 
 ## Scene composition
 
-- Text-first: if a scene has no type on screen, it's wrong.
-- Layer hierarchy: giant background word (8% opacity) + foreground spoken words + optional accent block.
-- Sync to the audio: each emphasis lands when the narrator stresses it. Read the line aloud, find the stressed word, that's your accent moment.
-- Keep every frame busy — even holds get a slow drift or pulse.
+- Layer hierarchy: watermark ghost word (7% opacity) → headline stack →
+  keyword accents → supporting caption.
+- Sync to audio: read the line aloud, find the stressed word, that's the
+  accent moment.
+- Drive scenes from `KineticSceneData` — modes, lines and keyword indexes are
+  data, so the same composer renders any subject.
 
 ## Example scene shape
 
 ```
 [AUDIO LINE]: "Nobody reads the terms. Nobody."
-→ "Nobody" SLAMS in (yellow block, black text), scale-punch on landing.
+mode: energetic
+→ "Nobody" slams in on a cobalt block (black text), scale-punch on landing.
   "reads the" types on white, 2-frame stagger.
-  "terms." stamps in + red underline swipe.
-  Cut. "Nobody." re-enters bigger, red, fills the frame. Hold with pulse.
+  "terms." tracks in + cyan underline swipe.
+  Cut. "Nobody." re-enters bigger, outlined, fills the frame. Hold with drift.
 ```
+
+## Files
+
+- `style.json` — catalogue metadata (`video style` lists this).
+- `tokens.ts` — THEME: colours, fonts (+ real font file paths in `fonts.faces`),
+  motion, layout, treatment, style-specific `type` block.
+- `lib/anim.ts` — motion vocabulary: slam, punch, track, wipe, marquee.
+- `components/` — `primitives.tsx` (blocks, ghost words, underlines, tickers),
+  `scene.tsx` (`KineticScene` composer + `KineticSceneData` schema),
+  `ExampleScene.tsx` (three modes, one subject), `index.ts` (public surface).
